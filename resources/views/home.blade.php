@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenFarm - Home</title>
+    <title>GreenSpace - Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -18,8 +18,8 @@
         <div class="container mx-auto max-w-7xl px-4 md:px-8 py-4 flex justify-between items-center">
             
             <a href="{{ route('home') }}" class="flex flex-col">
-                <span class="font-serif-custom text-2xl font-bold text-[#5c4033] tracking-tight leading-none">Green</span>
-                <span class="font-serif-custom text-xl font-bold text-[#7ca982] tracking-wide mt-0.5 pl-4">Farm</span>
+                <span class="font-serif-custom text-2xl font-bold text-[#7ca982] tracking-tight leading-none">Green</span>
+                <span class="font-serif-custom text-xl font-bold text-[#5c4033] tracking-wide mt-0.5 pl-4">Space</span>
             </a>
 
             <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-sm font-medium text-slate-600">
@@ -47,22 +47,24 @@
 
     <section class="relative min-h-[85vh] flex items-center justify-start bg-slate-900 overflow-hidden">
         
+       <!-- BANNER BACKGROUND PURE HIDROPONIK (CDN AKTIF & ANTI-EROR) -->
         <div class="absolute inset-0">
-            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1920&q=80" 
-                 alt="Ladang Kebun Hijau" 
-                 class="w-full h-full object-cover opacity-60 object-center">
-            <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
+            <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?q=80&w=1920&auto=format&fit=crop" 
+                 alt="Tanaman Hidroponik Modern" 
+                 class="w-full h-full object-cover opacity-50 object-center">
+            <!-- Overlay gelap agar teks slogan tetap kontras -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
         </div>
 
         <div class="container mx-auto max-w-7xl px-4 md:px-8 relative z-10 py-20 text-white">
             <div class="max-w-2xl space-y-6">
                 
                 <h1 class="text-5xl md:text-7xl font-black tracking-wide leading-tight drop-shadow-md">
-                    FEEDING<br>THE FUTURE
+                 Hidroponik <br> Dan Edukasi
                 </h1>
 
                 <p class="text-lg md:text-2xl font-medium tracking-wide text-slate-200 drop-shadow-xs">
-                    Stronger Farmer, Healthy Food for Better Life
+                   "Pahami Caranya, Petik Hasilnya: Belajar dan Tanam Hidroponikmu Sekarang!"
                 </p>
 
                 <div class="pt-4">
