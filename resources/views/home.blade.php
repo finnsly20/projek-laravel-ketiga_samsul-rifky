@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenSpace - Home</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
         .font-serif-custom { font-family: 'Playfair Display', serif; }
         
-        /* Efek Cinematic Slow Zoom untuk Background */
+        /* Efek Zoom Lambat Background */
         .zoom-bg {
             animation: slowZoom 20s ease-out infinite alternate;
         }
@@ -29,6 +30,7 @@
     <header class="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50 shadow-xs transition-all duration-300"
             data-aos="fade-down" 
             data-aos-duration="1000">
+        
         <div class="container mx-auto max-w-7xl px-4 md:px-8 py-4 flex justify-between items-center">
             
             <a href="{{ route('home') }}" class="flex flex-col group">
@@ -38,17 +40,7 @@
 
             <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-sm font-medium text-slate-600">
                 <a href="{{ route('home') }}" class="text-emerald-600 font-semibold transition">Home</a>
-                
-                <div class="relative group py-2">
-                    <button class="hover:text-emerald-600 transition flex items-center gap-1">
-                        About Us <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:rotate-180 transition-transform duration-300"></i>
-                    </button>
-                    <div class="absolute right-0 mt-2 w-48 bg-white border border-slate-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                        <a href="{{ route('about') }}" class="block px-4 py-2.5 text-xs text-slate-600 hover:bg-emerald-50 hover:text-emerald-700 rounded-t-xl transition">Our Profile</a>
-                        <a href="#" class="block px-4 py-2.5 text-xs text-slate-600 hover:bg-emerald-50 hover:text-emerald-700 transition">Our History</a>
-                        <a href="#" class="block px-4 py-2.5 text-xs text-slate-600 hover:bg-emerald-50 hover:text-emerald-700 rounded-b-xl transition">Certificates</a>
-                    </div>
-                </div>
+                <a href="{{ route('about') }}" class="hover:text-emerald-600 transition">About</a>
             </nav>
 
         </div>
@@ -99,9 +91,9 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Inisialisasi fungsi AOS agar langsung aktif saat halaman dimuat
+        // Mengaktifkan library AOS
         AOS.init({
-            once: true // Animasi hanya berjalan sekali saat pertama dibuka (biar ga risih pas di-scroll balik)
+            once: true 
         });
     </script>
 </body>
